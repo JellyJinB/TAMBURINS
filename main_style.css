@@ -1154,9 +1154,7 @@ footer .foot_text span {
     .s2 .imgwrap .scroll .scroll_box {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-image: none;
         position: relative;
         margin: 0;
     }
