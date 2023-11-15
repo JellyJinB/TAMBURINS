@@ -1,0 +1,875 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    background-color: #f3f3f3;
+}
+
+/* header */
+header span {
+    font-size: 0;
+}
+
+header .h_inner {
+    width: 100%;
+    max-width: 83vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header {
+    width: 100%;
+    height: 3vw;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(145, 145, 145, 0.85);
+}
+
+header h1 {
+    width: fit-content;
+    height: 1.6rem;
+    overflow: hidden;
+}
+
+header img {
+    width: 12vw;
+    height: 1.6rem;
+}
+
+header .icon i {
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.h_height {
+    width: 100%;
+    height: 3vw;
+    min-height: 30px;
+    position: relative;
+    top: 0;
+}
+
+
+/* //header */
+/* nav */
+nav {
+    width: 100%;
+    height: 100%;
+    background-image: url(./sub_bg.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 3vw;
+    right: -100%;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+.open{
+    right: 0;
+}
+
+
+nav .submenu li a,
+aside li a,
+aside p {
+    color: #ffffff;
+}
+
+nav .submenu {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+
+nav .submenu li {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav aside {
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 20%;
+    border: 1px solid #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0)
+}
+
+nav aside li {
+    font-size: 1rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+nav aside p {
+    font-weight: 700;
+}
+
+/* //nav */
+/* //nav */
+
+/* main */
+
+.menu {
+    width: 50vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 7vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.menu .box:nth-child(2) {
+    margin: 0 5rem;
+}
+
+.menu .box:nth-child(3) p {
+    font-weight: 900;
+
+}
+
+.menu .box p {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+
+main {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+}
+
+/* sectoin */
+section {
+    width: 90%;
+    height: 31.5vw;
+    position: relative;
+    margin: auto;
+    margin-top: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .t_box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .swiper {
+    width: 53%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+section .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+section .t_box h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section .t_box p {
+    font-size: 1.2rem;
+    line-height: 180%;
+}
+
+section .t_box .day span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 180%;
+}
+
+section .t_box .day span:nth-of-type(2) {
+    font-weight: 400;
+    float: right
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  opacity: 0.5;
+  padding: 15px 5px;
+  border-radius: 20px;
+  color: black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+.swiper-pagination {
+    --swiper-theme-color: #ffffff;}
+
+/* sectoin */
+/* footer */
+footer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.foot_bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(./sub2/f_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+footer img {
+    width: 30vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .foot_text {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    z-index: 3;
+}
+
+footer .foot_text span {
+    margin: 1.5rem;
+    font-size: .8rem;
+    display: block;
+}
+
+/* //main */
+
+
+
+
+@media screen and (max-width:1700px) {
+    header {
+        width: 100%;
+        height: 4vw;
+        min-height: 40px;
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 2.3vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 12vw;
+        height: 2.3vh;
+    }
+
+    header .icon i {
+        font-size: 2.5vw;
+    }
+
+    .h_height {
+        width: 100%;
+        height: 4vw;
+        min-height: 40px;
+        position: relative;
+        top: 0;
+    }
+
+    nav {
+        top: 4vw
+    }
+
+    section .t_box p {
+        font-size: 1rem;
+    }
+
+    section .t_box .day span {
+        font-size: 1rem;
+    }
+
+    .menu .box:nth-child(2) {
+        margin: 0 7rem;
+    }
+}
+
+/* /////// */
+
+@media screen and (max-width:1599px) {
+
+    header {
+        width: 100%;
+        height: 4vw;
+        min-height: 40px;
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 2.3vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 12vw;
+        height: 2.3vh;
+    }
+
+    header .icon i {
+        font-size: 2.5vw;
+        color: #ffffff;
+    }
+
+    .h_height {
+        width: 100%;
+        height: 4vw;
+        min-height: 40px;
+        position: relative;
+        top: 0;
+    }
+
+    nav {
+        top: 4vw
+    }
+
+    section .t_box h4 {
+        font-size: 1.6rem;
+    }
+
+    section .t_box p {
+        font-size: 1rem;
+        line-height: 180%;
+    }
+
+    section .t_box .day span {
+        font-size: 1rem;
+    }
+
+    .menu .box:nth-child(2) {
+        margin: 0 7rem;
+    }
+}
+
+/* ////// */
+
+@media screen and (max-width:1359px) {
+    body {
+        font-size: 13px;
+    }
+
+    section .t_box h4 {
+        font-size: 1.5rem;
+    }
+
+    section .t_box p {
+        font-size: .9rem;
+        line-height: 180%;
+    }
+
+    section .t_box .day span {
+        font-size: .9rem;
+    }
+
+    .menu .box:nth-child(2) {
+        margin: 0 4rem;
+    }
+}
+
+/* ////// */
+@media screen and (min-width:1024px) and (max-width:1140px) {
+    body {
+        font-size: 13px;
+    }
+
+    header {
+        width: 100%;
+        height: 4.5vw;
+        min-height: 40px;
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 2.4vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 12.5vw;
+        height: 2.4vh;
+    }
+
+    header .icon i {
+        font-size: 2.7vw;
+    }
+
+    .h_height {
+        width: 100%;
+        height: 4.5vw;
+        min-height: 40px;
+        position: relative;
+        top: 0;
+    }
+
+    nav {
+        top: 4.5vw;
+    }
+
+    .menu .box p {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    section {
+        height: 38vw;
+        align-items: flex-end;
+    }
+
+    section .swiper {
+        height: 87%;
+        width: 50%;
+    }
+    section .t_box{
+        width: 43%;
+    }
+
+    section .t_box h4 {
+        font-size: 1.3rem;
+    }
+
+    section .t_box p {
+        font-size: .8rem;
+        line-height: 170%;
+    }
+
+    section .t_box .day span {
+        font-size: .8rem;
+    }
+}
+
+/* ////// */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header {
+        width: 100%;
+        height: 6vw;
+        min-height: 40px;
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 2.7vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 13vw;
+        height: 2.7vh;
+    }
+
+    header .icon i {
+        font-size: 2.9vw;
+        color: #ffffff;
+    }
+
+    .h_height {
+        width: 100%;
+        height: 6vw;
+        min-height: 40px;
+        position: relative;
+        top: 0;
+    }
+
+    nav {
+        top: 6vw
+    }
+
+    nav .submenu {
+        top: 15%
+    }
+
+    section {
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    section .swiper {
+        width: 100%;
+        height: 57.5%;
+    }
+
+
+    section .t_box {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    section .t_box h4 {
+        font-size: 1.5rem;
+        margin: 5vw auto
+    }
+
+    section .t_box p {
+        font-size: 1rem;
+        line-height: 180%;
+    }
+
+    section .t_box .day {
+        width: 100%;
+        margin: 5vw 0;
+        height: fit-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    section .t_box .day span {
+        font-size: 1rem;
+    }
+
+
+    footer .foot_text span {
+        margin: 1.5rem;
+        font-size: .8rem;
+        line-height: 170%;
+        display: block;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:767px) {
+    header {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: rgba(145, 145, 145, 0.85);
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 4.8vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 23vw;
+        height: 4.8vh;
+    }
+
+    header .icon i {
+        font-size: 4.8vw;
+    }
+
+    header .h_inner {
+        width: 100%;
+        max-width: 83vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        top: 7vh;
+
+    }
+
+    .menu {
+        width: 83vw
+    }
+
+    .menu .box p {
+        font-size: 15px;
+    }
+
+    .menu .box:nth-child(2) {
+        margin: 0px 5rem;
+    }
+
+
+    .h_height {
+        width: 100%;
+        height: 7vh;
+        position: relative;
+        top: 0;
+    }
+
+    section {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column-reverse;
+        margin-top: 20vw;
+    }
+
+    section .swiper {
+        width: 100%;
+        height: 50.5%;
+    }
+
+    section .t_box {
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    section .t_box h4 {
+        font-size: 16px;
+        margin: 5vw auto;
+    }
+
+    section .t_box p {
+        font-size: 13px;
+        line-height: 180%;
+    }
+
+    section .t_box .day {
+        width: 100%;
+        margin: 5vw 0;
+        height: fit-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    section .t_box .day span {
+        font-size: 13px;
+    }
+
+    footer .foot_text span {
+        margin: 1.5rem;
+        font-size: .8rem;
+        line-height: 170%;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:499px) {
+
+    /* 큰 모바일 */
+    body {
+        font-size: 13px;
+    }
+
+    header {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    header h1 {
+        width: fit-content;
+        height: 4.8vh;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 23vw;
+        height: 4.8vh;
+    }
+
+    header .icon i {
+        font-size: 4.8vw;
+        color: #ffffff;
+    }
+
+    header .h_inner {
+        width: 100%;
+        max-width: 83vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .h_height {
+        width: 100%;
+        height: 7vh;
+        position: relative;
+        top: 0;
+        background-color: #fff;
+    }
+
+    /* ////////header */
+
+    /* nav */
+    nav {
+        top: 7vh;
+
+    }
+
+    nav .submenu li a,
+    aside li a,
+    aside p {
+        color: #ffffff;
+    }
+
+    nav .submenu {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        top: 10%;
+    }
+
+    nav .submenu li {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    nav aside {
+        width: fit-content;
+        height: fit-content;
+        padding: 1% 20%;
+        border: 1px solid #ffffff;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 18%;
+        transform: translate(-50%, 0)
+    }
+
+    nav aside li {
+        font-size: 1rem;
+        margin: 20px 0;
+        font-weight: 500;
+    }
+
+    nav aside p {
+        font-weight: 700;
+    }
+
+    /* //nav */
+    .menu {
+        width: 83vw
+    }
+
+    .menu .box p {
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+
+    .menu .box:nth-child(2) {
+        margin: 0px 3rem;
+    }
+
+
+    section {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column-reverse;
+        margin-top: 20vw;
+    }
+
+    section .swiper {
+        width: 100%;
+        height: 40.5%;
+    }
+
+    section .t_box {
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    section .t_box h4 {
+        font-size: 15px;
+        margin: 5vw auto;
+    }
+
+    section .t_box p {
+        font-size: 13px;
+        line-height: 180%;
+    }
+
+    section .t_box .day {
+        width: 100%;
+        margin: 5vw 0;
+        height: fit-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    section .t_box .day span {
+        font-size: 13px;
+    }
+
+    footer .foot_text span {
+        margin: 13px;
+        font-size: 11px;
+        line-height: 180%;
+        display: block;
+    }
+}
