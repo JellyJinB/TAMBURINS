@@ -357,25 +357,21 @@ main {
 .s2 .imgwrap .scroll .scroll_box:nth-child(1) {
     background-image: url(./main/s2_1bg.JPG);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .s2 .imgwrap .scroll .scroll_box:nth-child(2) {
-    background-image: url(./main/s2_2bg.jpg);
+    background-image: url(./main/s2_2bg.JPG);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .s2 .imgwrap .scroll .scroll_box:nth-child(3) {
-    background-image: url(./main/s2_3bg.jpg);
+    background-image: url(./main/s2_3bg.JPG);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .s2 .imgwrap .scroll .scroll_box:nth-child(4) {
-    background-image: url(./main/s2_4bg.jpg);
+    background-image: url(./main/s2_4bg.JPG);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .itemwrap {
@@ -1160,6 +1156,7 @@ footer .foot_text span {
         height: 100%;
         position: relative;
         margin: 0;
+        padding: 20%;
     }
 
     .s2 .imgwrap .scroll .scroll_box:first-child {
