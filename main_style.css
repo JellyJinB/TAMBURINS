@@ -644,7 +644,7 @@ footer .foot_text span {
 
 }
 
-@media screen and (min-width:1024px) and (max-width:1199px) {
+@media screen and (min-width:1025px) and (max-width:1199px) {
     body {
         font-size: 14px;
     }
@@ -767,7 +767,7 @@ footer .foot_text span {
 }
 
 /*/////*/
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
     body {
         font-size: 13px;
     }
