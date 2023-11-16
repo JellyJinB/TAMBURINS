@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("nav").toggleClass("open");
     });
     ///nav////
-    // top_bg//
+    // top/footer_bg//
     let observer = new IntersectionObserver((e) => {
         e.forEach((box) => {
             if (box.isIntersecting) {
@@ -17,9 +17,10 @@ $(document).ready(function () {
 
     })
 
-    let top_bg = document.querySelectorAll(".top_bg")
+    let top_bg = document.querySelectorAll(".tf_bg")
     observer.observe(top_bg[0])
-    // top_bg//
+    observer.observe(top_bg[1])
+    // top/footer_bg//
 
 
     // title//
@@ -27,21 +28,6 @@ $(document).ready(function () {
     $(".title>span").animate({ left: '0px' }, 1300, 'easeInOutQuad');
     // title//
 
-    // foo_bg//
-    $("footer").each(function(){
-        let win=$(window)
-        let footer =$(this)
-
-        let spot = footer.offset().top;
-        console.log(spot)
-
-        win.scroll(function(){
-            if(win.scrollTop() > spot){
-                $('.f_bgImg').fadeIn();
-            }else{$('.f_bgImg').fadeOut();}
-        });
-    });
-        // foo_bg//
 
 
 });
