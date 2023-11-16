@@ -1157,17 +1157,8 @@ footer .foot_text span {
         position: relative;
         margin: 0;
     }
-    .s2 .imgwrap .scroll .scroll_box:nth-child(1){
-        background-image: none;
-    }
-    .s2 .imgwrap .scroll .scroll_box:nth-child(2){
-        background-image: none;
-    }
-    .s2 .imgwrap .scroll .scroll_box:nth-child(3){
-        background-image: none;
-    }
-    .s2 .imgwrap .scroll .scroll_box:nth-child(4){
-        background-image: none;
+    .s2 .imgwrap .scroll .scroll_box figure{
+        opacity: 0;
     }
 
     .s2 .imgwrap .scroll .scroll_box:first-child {
