@@ -1278,6 +1278,10 @@ footer .foot_text span {
         margin-top: 2rem;
     }
 
+    footer .f_bg video{
+        width: auto;
+        height: 100%;
+    }
 
     footer .foot_text span {
         margin: .5rem;
