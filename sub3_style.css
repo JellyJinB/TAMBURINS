@@ -457,6 +457,10 @@ footer .foot_text span{
     nav aside p {
         font-weight: 700;
     }
+    .bg video{
+        height: 100%;
+        width: auto;
+    }
 
     .logo{
         width: 50vw;
